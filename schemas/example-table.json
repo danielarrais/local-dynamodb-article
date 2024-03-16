@@ -1,0 +1,19 @@
+{
+  "TableName": "MyDynamoTable",
+  "KeySchema": [
+    {
+      "AttributeName": "ID",
+      "KeyType": "HASH"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "ID",
+      "AttributeType": "N"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}
